@@ -2,6 +2,8 @@
 
 Website informasi sederhana tentang COVID-19 Indonesia dan data per-provinsi Indonesia.
 
+[Klik Disini](https://indrijunanda.github.io/cekcovid19id/) untuk melihat Website
+
 ### Framework
 
  - [Bootstrap](https://getbootstrap.com/)
