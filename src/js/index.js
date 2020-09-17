@@ -1,4 +1,3 @@
-// Indonesia full
 $(document).ready(function () {
     $.ajax({
         url: 'https://covid19.mathdro.id/api/countries/indonesia/confirmed',
@@ -85,4 +84,6 @@ $(document).ready(function () {
 
     today = dd + ' / ' + mm + ' / ' + yyyy;
     document.getElementById('tanggal').innerHTML = 'Data Pertanggal ' + today;
-})
+
+
+});
