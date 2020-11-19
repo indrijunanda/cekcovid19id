@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Per-Provinsi - Cek COVID-19 Indonesia</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <meta name="title" content="Cek Covid19 Indonesia">
+  <meta name="description" content="Website informasi sederhana tentang COVID-19 Indonesia dan data per-provinsi Indonesia.">
+  <link rel="stylesheet" href="dist/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="dist/@fortawesome/fontawesome-free/css/fontawesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/style.min.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger static-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/Logo_White.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link navbar-home" href="index.html">Beranda</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link navbar-home" href="provinsi.html">Data Per-Provinsi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navbar-home" href="covid19.html">Apa itu COVID-19?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navbar-home" href="pencegahan.html">Pencegahan</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="py-5 bg-image-full" style="background-image: url('./img/freepick_3611116.png');">
+    <h1 class="text-center provinsi">DATA COVID-19 PER-PROVINSI</h1>
+    <p class="text-center text-white"><b>#DIRUMAHAJA</b></p>
+  </header>
+
+  <div class="container container-content my-5">
+    <h3 id="tanggal" class="mb-5"></h3>
+    <div class="row" id="listnya">
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <span>&copy; <script>
+          document.write(new Date().getFullYear());
+        </script> <b>indrijunanda</b> from <b>Indonesia</b> with <i class="fas fa-heart"></i></span>
+    </div>
+  </footer>
+
+  <script src="dist/jquery/dist/jquery.min.js"></script>
+  <script src="dist/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="dist/@fortawesome/fontawesome-free/js/all.min.js"></script>
+  <script src="src/js/index.min.js"></script>
+</body>
+
+</html>
