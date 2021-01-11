@@ -2,7 +2,7 @@
 
 Website informasi sederhana tentang COVID-19 Indonesia dan data per-provinsi Indonesia.
 
-[Klik Disini](https://indrijunanda.github.io/cekcovid19id/) untuk melihat Website
+[Klik Disini](https://cekcovid19id.vercel.app/) untuk melihat Website
 
 ### Framework
 
