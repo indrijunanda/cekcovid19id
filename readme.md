@@ -1,6 +1,6 @@
 # CEK COVID-19 INDONESIA
 
-Website informasi sederhana tentang COVID-19 Indonesia dan data per-provinsi Indonesia.
+Informasi Data COVID-19 Indonesia dan Data Perprovinsi di Indonesia.
 
 [Klik Disini](https://cekcovid19id.vercel.app/) untuk melihat Website
 
