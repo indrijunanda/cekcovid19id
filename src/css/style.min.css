@@ -1,1 +1,145 @@
-html{position:relative;min-height:100%}body{margin-bottom:60px;color:#757575!important}.footer{position:absolute;bottom:0;width:100%;height:60px;line-height:60px;background-color:#e53935;color:#fafafa}.footer span{font-size:.9em}@media (min-width:768px){html{font-size:16px}}.container{max-width:80em}.container-content{width:85%;padding-bottom:3em}.container-home{margin-top:3em;padding-bottom:1em!important}@media(max-width:768px){.container{width:90%}}h1,h2,h3,h4,h5,h6,p{font-family:'Open Sans',sans-serif!important}.pricing-header{max-width:700px}.card-deck .card{min-width:220px}.border-top{border-top:1px solid #e5e5e5}.border-bottom{border-bottom:1px solid #e5e5e5}.box-shadow{box-shadow:0 .25rem .75rem rgba(0,0,0,.05)}.angka-kasus{font-size:3em;float:right;font-weight:bold}.title-home{font-weight:800}.navbar{padding:1em 0}.navbar-brand img{max-height:2em}.navbar-home{color:#e53935}.card{border:none}.bg-image-full{background:no-repeat center center scroll;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;-o-background-size:cover}.bg-image-full .provinsi{color:#fafafa;font-weight:900;font-size:3em}.bg-image-full .other{color:#fafafa;font-weight:900;font-size:5em}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+
+body {
+    color: #495057 !important;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+}
+
+
+@media (min-width:768px) {
+    html {
+        font-size: 16px
+    }
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: #212529;
+}
+
+p{
+    font-size: 16px;
+}
+
+main{
+    margin-top: 8rem;
+}
+
+.pricing-header {
+    max-width: 700px
+}
+
+.card-deck .card {
+    min-width: 220px
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05)
+}
+
+.angka-kasus {
+    font-size: 3em;
+    float: right;
+    font-weight: bold
+}
+
+.title-home {
+    font-weight: 800;
+    color: #212529;
+    font-size: 55px;
+    line-height: 60px;
+
+}
+
+.navbar {
+    padding: 1em 0
+}
+
+.navbar-brand{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.nav-item{
+    font-weight: 700;
+    color: #495057;
+    margin-left: .4em;
+    margin-right: .4em;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-item:hover{
+    font-weight: 700;
+    color: #495057 !important;
+    background-color: rgba(2, 62, 125, 0.1);
+    border-radius: 0.3rem;
+}
+
+
+.card {
+    height: 170px;
+    border-radius: 0.5em;
+    border: none;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);
+}
+
+.navbar-toggler{
+    outline: 0;
+    border: none;
+    font-size: 28px;
+    color: #023e7d;
+}
+
+
+.navbar-toggler:focus:hover{
+    outline: 0;
+    box-shadow: none;
+    border: none;
+}
+
+.text-card{
+    color: #023e7d;
+}
+
+.card.terkonfirmasi{
+    background-color: #023e7d;
+    color: #ffffff;
+}
+
+.card.kasus-aktif{
+    color: #ffc300 !important;
+}
+
+.card.terkonfirmasi .card-title h6{
+    color: #ffffff !important;
+}
+
+.bg-image-full {
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover
+}
+
+.bg-image-full .provinsi {
+    color: #fafafa;
+    font-weight: 900;
+    font-size: 3em
+}
+
+.bg-image-full .other {
+    color: #fafafa;
+    font-weight: 900;
+    font-size: 5em
+}

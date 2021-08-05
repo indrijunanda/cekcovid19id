@@ -6,48 +6,37 @@ $(document).ready(function () {
         success: function (result) {
             let covid19Case = result;
             $.each(covid19Case, function (i, data) {
-                $('#konfirmasi').append(
-                    `<div class="card shadow">
-                    <div class="card-body">
-                        <div class="card-title">
-                        <h6><i class="fas fa-plus"></i> <b>Kasus Terkonfirmasi</b></h6>
-                        </div>
-                        <p class="angka-kasus"> ${data.confirmed}</p>
-                    </div>
-                </div>`
+                $('#konfirmasi').html(
+                    `<p class="angka-kasus"> ${data.confirmed}</p>`
                 );
 
-                $('#dirawat').append(
-                    `<div class="card shadow">
-                     <div class="card-body">
-                      <div class="card-title">
-                        <h6><i class="fas fa-hospital"></i> <b>Dalam Perawatan</b></h6>
-                      </div>
-                      <p class="angka-kasus text-warning">${data.active}</p>
-                    </div>
-                  </div>`
+                $('#dirawat').html(
+                    `<p class="angka-kasus">${data.active}</p>`
                 );
 
-                $('#sembuh').append(
-                    `<div class="card shadow">
-                    <div class="card-body">
-                      <div class="card-title">
-                        <h6><i class="far fa-smile"></i> <b>Sembuh</b></h6>
-                      </div>
-                      <p class="angka-kasus text-success">${data.recovered}</p>
-                    </div>
-                  </div>`
+                $('#sembuh').html(
+                    `<p class="angka-kasus">${data.recovered}</p>`
                 );
 
-                $('#meninggal-dunia').append(
-                    `<div class="card shadow">
-                    <div class="card-body">
-                      <div class="card-title">
-                        <h6><i class="far fa-frown"></i> <b>Meninggal Dunia</b></h6>
-                      </div>
-                      <p class="angka-kasus text-danger">${data.deaths}</p>
-                    </div>
-                  </div>`
+                $('#meninggal-dunia').html(
+                    `<p class="angka-kasus">${data.deaths}</p>`
+                )
+
+            })
+        },
+    });
+
+    $.ajax({
+        url: 'https://covid19.mathdro.id/api/countries/indonesia/',
+        type: 'GET',
+        dataType: 'JSON',
+        success: function (result) {
+            let covid19Case = result;
+            let lastTime = moment(covid19Case.lastUpdate)
+            $.each(lastTime, () => {
+    
+                $('#terakhir-update').html(
+                    `<p>${lastTime.locale('id').format('LLLL')}</p>`
                 )
             })
         },
