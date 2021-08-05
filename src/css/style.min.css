@@ -24,15 +24,13 @@ p{
 
 main{
     margin-top: 8rem;
+    margin-bottom: 5rem;
 }
 
 .pricing-header {
     max-width: 700px
 }
 
-.card-deck .card {
-    min-width: 220px
-}
 
 .border-top {
     border-top: 1px solid #e5e5e5
@@ -46,10 +44,10 @@ main{
     box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05)
 }
 
-.angka-kasus {
-    font-size: 3em;
-    float: right;
-    font-weight: bold
+.angka-kasus{
+    font-size: 2.3rem;
+    font-weight: bold;
+    margin-bottom: 0.7rem;
 }
 
 .title-home {
@@ -87,7 +85,7 @@ main{
 
 
 .card {
-    height: 170px;
+    height: 155px;
     border-radius: 0.5em;
     border: none;
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);
@@ -100,6 +98,28 @@ main{
     color: #023e7d;
 }
 
+.card.provinsi {
+    margin-top: 2rem;
+    border-radius: 0.5em;
+    box-shadow: none !important;
+    background-color: #023e7d;
+    height: auto !important;
+}
+
+.card.provinsi h3{
+    color: #ffffff !important;
+    font-weight: 600;
+}
+
+.card.provinsi p{
+    color: #ffffff !important;
+}
+
+.card.provinsi .btn{
+    padding: 10px 40px;
+    font-size: 16px;
+    font-weight: 500;
+}
 
 .navbar-toggler:focus:hover{
     outline: 0;
@@ -111,13 +131,27 @@ main{
     color: #023e7d;
 }
 
+
 .card.terkonfirmasi{
     background-color: #023e7d;
     color: #ffffff;
 }
 
+.card .card-title h6{
+    font-weight: 600;
+    color: #6c757d;
+}
+
 .card.kasus-aktif{
-    color: #ffc300 !important;
+    color: #ffa200 !important;
+}
+
+.card.sembuh{
+    color: #52b788 !important;
+}
+
+.card.meninggal{
+    color: #c9184a !important;
 }
 
 .card.terkonfirmasi .card-title h6{
@@ -142,4 +176,16 @@ main{
     color: #fafafa;
     font-weight: 900;
     font-size: 5em
+}
+
+.btn-outline-primary{
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+.btn-outline-primary:hover{
+    border: 1px solid #ffffff;
+    color: #023e7d;
+    background-color: #ffffff;
+    
 }

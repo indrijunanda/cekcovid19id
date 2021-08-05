@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
     $.ajax({
         url: 'https://covid19.mathdro.id/api/countries/indonesia/confirmed',
         type: 'GET',
@@ -7,24 +8,52 @@ $(document).ready(function () {
             let covid19Case = result;
             $.each(covid19Case, function (i, data) {
                 $('#konfirmasi').html(
-                    `<p class="angka-kasus"> ${data.confirmed}</p>`
-                );
+                    `<p> ${data.confirmed}</p>`
+                ).mask("#.##0.000", {reverse: true});
 
                 $('#dirawat').html(
-                    `<p class="angka-kasus">${data.active}</p>`
-                );
+                    `<p>${data.active}</p>`
+                ).mask("#.##0.000", {reverse: true});
 
                 $('#sembuh').html(
-                    `<p class="angka-kasus">${data.recovered}</p>`
-                );
+                    `<p>${data.recovered}</p>`
+                ).mask("#.##0.000", {reverse: true});
 
                 $('#meninggal-dunia').html(
-                    `<p class="angka-kasus">${data.deaths}</p>`
-                )
-
+                    `<p>${data.deaths}</p>`
+                ).mask("#.##0.000", {reverse: true});
             })
+
         },
     });
+
+    $.ajax({
+        url: 'https://apicovid19indonesia-v2.vercel.app/api/indonesia/harian',
+        type: 'GET',
+        dataType: 'JSON',
+        success: function (result) {
+            let covid19Case = result;
+            let dayCase = covid19Case.pop()
+            $.each(covid19Case, function () {
+                $('#harian-konfirmasi').html(
+                    `<p><i class="bi-arrow-up-circle"></i> ${dayCase.positif}</p>`
+                );
+
+                $('#harian-dirawat').html(
+                    `<p>${dayCase.dirawat}</p>`
+                );
+                $('#harian-sembuh').html(
+                    `<p><i class="bi-arrow-up-circle"></i> ${dayCase.sembuh}</p>`
+                );
+
+                $('#harian-meninggal-dunia').html(
+                    `<p><i class="bi-arrow-up-circle"></i> ${dayCase.meninggal}</p>`
+                );
+            })
+
+        },
+    });
+
 
     $.ajax({
         url: 'https://covid19.mathdro.id/api/countries/indonesia/',
@@ -36,8 +65,9 @@ $(document).ready(function () {
             $.each(lastTime, () => {
     
                 $('#terakhir-update').html(
-                    `<p>${lastTime.locale('id').format('LLLL')}</p>`
+                    `<p>Pembaruan Terakhir : ${lastTime.locale('id').format('LLLL')}</p>`
                 )
+                
             })
         },
     });
@@ -66,13 +96,6 @@ $(document).ready(function () {
         },
     })
 
-    var today = new Date();
-    var dd = String(today.getDate()).padStart(2, '0');
-    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-    var yyyy = today.getFullYear();
-
-    today = dd + ' / ' + mm + ' / ' + yyyy;
-    document.getElementById('tanggal').innerHTML = 'Data Pertanggal ' + today;
 
 
 });
