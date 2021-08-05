@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
 
 <head>
   <meta charset="UTF-8">
@@ -9,65 +9,55 @@
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   <meta name="title" content="Cek Covid19 Indonesia">
   <meta name="description" content="Website informasi sederhana tentang COVID-19 Indonesia dan data per-provinsi Indonesia.">
-  <link rel="stylesheet" href="dist/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="dist/@fortawesome/fontawesome-free/css/fontawesome.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="dist/bootstrap-icons/font/bootstrap-icons.css">
   <link rel="stylesheet" href="src/css/style.min.css">
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-danger static-top">
+<body class="d-flex flex-column h-100">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm">
     <div class="container">
-      <a class="navbar-brand" href="index.html">
-        <img src="img/Logo_White.png" alt="">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link navbar-home" href="index.html">Beranda</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link navbar-home" href="provinsi.html">Data Per-Provinsi</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link navbar-home" href="covid19.html">Apa itu COVID-19?</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link navbar-home" href="pencegahan.html">Pencegahan</a>
-          </li>
-        </ul>
-      </div>
+        <a class="navbar-brand" href="/">cekcovid19id
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-md-end" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link navbar-home" href="/">Beranda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navbar-home active" href="provinsi.html">Data Statistik Provinsi</a>
+                </li>
+            </ul>
+        </div>
     </div>
-  </nav>
+</nav>
 
-  <header class="py-5 bg-image-full" style="background-image: url('./img/freepick_3611116.png');">
-    <h1 class="text-center provinsi">DATA COVID-19 PER-PROVINSI</h1>
-    <p class="text-center text-white"><b>#DIRUMAHAJA</b></p>
-  </header>
-
-  <div class="container container-content my-5">
-    <h3 id="tanggal" class="mb-5"></h3>
+<main>
+  <div class="container">
+    <h3 class="fw-bold">Data Statistik Kasus COVID-19 Untuk Seluruh Provinsi Di Indonesia</h3>
+    <div id="terakhir-update"></div>
     <div class="row" id="listnya">
     </div>
   </div>
+</main>
 
-  <footer class="footer">
-    <div class="container">
-      <span>&copy; <script>
-          document.write(new Date().getFullYear());
-        </script> <b>indrijunanda</b> from <b>Indonesia</b> with <i class="fas fa-heart"></i></span>
-    </div>
-  </footer>
 
+<footer class="footer mt-auto py-3 bg-white">
+  <div class="container text-center">
+      <span> &copy; indrijunanda</span><br>
+      <span>Developed use <a href="//getbootstrap.com" >Bootstrap 5</a> and Hosted on <a href="//vercel.com" >Vercel</a></span>
+  </div>
+</footer>
+
+  <script src="dist/bootstrap/js/bootstrap.min.js"></script>
   <script src="dist/jquery/dist/jquery.min.js"></script>
-  <script src="dist/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.13.4/jquery.mask.min.js"></script>
   <script src="dist/momentjs/moment-with-locales.min.js"></script>
-  <script src="dist/@fortawesome/fontawesome-free/js/all.min.js"></script>
-  <script src="src/js/index.js"></script>
+  <script src="src/js/index.min.js"></script>
 </body>
 
 </html>
