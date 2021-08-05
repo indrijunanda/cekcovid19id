@@ -27,7 +27,7 @@
             <div class="collapse navbar-collapse justify-content-md-end" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link navbar-home" href="index.html">Beranda</a>
+                        <a class="nav-link navbar-home" href="/">Beranda</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link navbar-home" href="provinsi.html">Data Statistik Provinsi</a>
@@ -45,18 +45,20 @@
                     <p>Informasi Data Statistik Kasus COVID-19 Indonesia dan Data Provinsi di Indonesia.</p>
                 </div>
                 <div class="col-lg-3">
-                    <div class="card mb-3">
-                        <div class="card-body">
-                            <h4>Call Center</h4>
-                            <p>Nomor Darurat</p>
-                            <div class="d-flex justify-content-end mt-3">
-                                <span class="fs-1 fw-bold text-card"><i class="bi-telephone mr-5"></i> 119</span>
+                    <a href="tel:119" class="card-telp">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h4>Call Center</h4>
+                                <p>Nomor Darurat</p>
+                                <div class="d-flex justify-content-end">
+                                    <span class="fs-1 fw-bold text-card"><i class="bi-telephone mr-5"></i> 119</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-lg-3">
-                    <div class="card mb-3">
+                    <div class="card mb-3 card-sosmed">
                         <div class="card-body">
                             <h6>Ikuti Perkembangan Seputar COVID-19 Dari Kemenkes RI</h6>
                             <div class="d-flex justify-content-end mt-4">
@@ -126,7 +128,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row mb-5">
                 <div class="col-lg-12">
                     <div class="card provinsi">
                         <div class="card-body">
@@ -147,14 +149,46 @@
                     </div>
                 </div>
             </div>
-            <div class="row"></div>
+            <div class="row mt-3">
+                <h1 class="fs-2 fw-bold text-center mb-3">Yang harus kamu ketahui</h1>
+                <div class="col-lg-6 mt-3">
+                    <img src="img/index1.svg" alt="COVID-19 Illustrations">
+                </div>
+                <div class="col-lg-6 mt-3">
+                    <h4 class="fw-bold">Apa itu COVID-19 ?</h4>
+                    <p>COVID-19 adalah penyakit yang disebabkan oleh virus severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). COVID-19 dapat menyebabkan gangguan sistem pernapasan, mulai dari gejala yang ringan seperti flu, hingga infeksi paru-paru, seperti pneumonia. COVID-19 (coronavirus disease 2019) adalah jenis penyakit baru yang disebabkan oleh virus dari golongan coronavirus, yaitu SARS-CoV-2 yang juga sering disebut virus Corona.</p>
+                    <h4 class="fw-bold">Gejala</h4>
+                    <p>Gejala awal infeksi COVID-19 bisa menyerupai gejala flu, yaitu demam, pilek, batuk kering, sakit tenggorokan, dan sakit kepala. Setelah itu, gejala dapat hilang dan sembuh atau malah memberat. Penderita dengan gejala yang berat bisa mengalami demam tinggi, batuk berdahak atau berdarah, sesak napas, dan nyeri dada.</p>
+                    <h4 class="fw-bold">Cara Penularan</h4>
+                    <p>Seseoarang dapat terinfeksi dari penderita COVID-19. Virus ini menyebar melalui tetesan kecil (droplet) dari hidung atau mulut saat batuk atau bersin. Droplet tersebut kemudian jatuh pada benda disekitarnya. Dan ketika ada orang lain yang menyentuh benda yang sudah terkontaminasi dengan droplet tersebut, lalu orang itu menyentuh mata, hidung ataupun mulut, maka orang tersebut dapat terinfeksi COVID-19. Seseoarang juga dapat terinfeksi COVID-19 ketika tanpa sengaja menghirup droplet dari penderita.</p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <h1 class="fs-2 fw-bold text-center mb-3">Bagaimana Cara Mencegahnya?</h1>
+                <div class="col-lg-6 mt-3">
+                    <img src="img/index2.svg" alt="COVID-19 Illustrations 2" class="img-fluid">
+                </div>
+                <div class="col-lg-6">
+                    <h4 class="fw-bold mt-3">Cara Pencegahan</h4>
+                    <ol type="0">
+                        <li><p>Cuci Tangan secara rutin menggunakan air dan sabun atau cairan pembersih tangan berbahan alkohol</p></li>
+                        <li><p>Selalu jaga jarak aman. Terutama dengan orang yang batuk atau bersin.</p></li>
+                        <li><p>Mengenakan masker jika pembatasan fisik tidak memungkinkan</p></li>
+                        <li><p>Jangan sentuk mata, hidung atau mulut</p></li>
+                        <li><p>Saat batuk atau bersin, tutup mulut dan hidung dengan lengan atau tisu</p></li>
+                        <li><p>Jangan keluar rumah jika tidak ada kepentingan mendesak atau jika merasa tidak enak badan</p></li>
+                        <li><p>Jika demam, batuk atau kesulatan bernapas segera cari bantuan medis.</p></li>
+                    </ol>
+                </div>
+            </div>
         </div>
+        <button id="back-to-top">Back to Top <i class="bi-arrow-up"></i></button>
     </main>
     <footer class="footer mt-auto py-3 bg-white">
         <div class="container text-center">
             <span> &copy; indrijunanda</span><br>
-            <span>Developed use <a href="//getbootstrap.com" class="text-primary">Bootstrap 5</a> and Hosted on <a
-                    href="//vercel.com" class="text-primary">Vercel</a></span>
+            <span>Developed use <a href="//getbootstrap.com" >Bootstrap 5</a> and Hosted on <a
+                    href="//vercel.com" >Vercel</a></span>
         </div>
     </footer>
 

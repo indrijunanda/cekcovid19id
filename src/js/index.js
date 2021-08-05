@@ -97,5 +97,13 @@ $(document).ready(function () {
     })
 
 
+    var o = $("#back-to-top");
+    $(window).scroll((function () {
+        $(window).scrollTop() > 150 ? o.addClass("show") : o.removeClass("show")
+    })), o.on("click", (function (o) {
+        o.preventDefault(), $("html, body").animate({
+            scrollTop: 0
+        }, "300")
+    }))
 
 });

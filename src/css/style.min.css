@@ -20,6 +20,7 @@ h1,h2,h3,h4,h5,h6{
 
 p{
     font-size: 16px;
+    line-height: 28px;
 }
 
 main{
@@ -91,11 +92,52 @@ main{
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);
 }
 
+.card-telp{
+    text-decoration: none;
+}
+
+ol li{
+    margin-bottom: -0.3rem;
+}
+
+.card-telp .card{
+    text-decoration: none;
+    color: #023e7d;
+    transition: all .2s ease-in-out;
+}
+
+.card-telp:hover .card{
+    background-color: #023e7d;
+    text-decoration: none;
+    color: #ffffff !important;
+}
+
+.card-telp .card p{
+    color: #212529 !important;
+}
+
+
+.card-telp:hover .card h4{
+    color: #ffffff !important;
+}
+
+.card-telp:hover .card p{
+    color: #ffffff !important;
+}
+
+.card-telp:hover .card span{
+    color: #ffffff !important;
+}
+
 .navbar-toggler{
     outline: 0;
     border: none;
     font-size: 28px;
     color: #023e7d;
+}
+
+.card-sosmed:hover a{
+    color: #023e7d !important;
 }
 
 .card.provinsi {
@@ -109,6 +151,7 @@ main{
 .card.provinsi h3{
     color: #ffffff !important;
     font-weight: 600;
+    line-height: 40px;
 }
 
 .card.provinsi p{
@@ -187,5 +230,49 @@ main{
     border: 1px solid #ffffff;
     color: #023e7d;
     background-color: #ffffff;
+    
+}
+
+#back-to-top {
+    display: inline-block;
+    background-color: #ffffff;
+    border: 1px solid #212529;
+    height: 40px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000
+}
+
+#back-to-top::after {
+    font-weight: 400;
+    font-size: 2em;
+    color: #fff
+}
+
+#back-to-top.show {
+    opacity: 1;
+    visibility: visible
+}
+
+footer {
+    color: #212529;
+}
+
+footer a {
+    text-decoration: none;
+    color: #023e7d !important;
+    font-weight: 700;
+}
+
+@media screen and (max-width:990px) {
+    footer {
+        font-size: 12px
+    }
     
 }
