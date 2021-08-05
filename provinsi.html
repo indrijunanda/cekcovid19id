@@ -2,62 +2,74 @@
 <html lang="en" class="h-100">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Data Per-Provinsi - Cek COVID-19 Indonesia</title>
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-  <meta name="title" content="Cek Covid19 Indonesia">
-  <meta name="description" content="Website informasi sederhana tentang COVID-19 Indonesia dan data per-provinsi Indonesia.">
-  <link rel="stylesheet" href="dist/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="dist/bootstrap-icons/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="src/css/style.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Statistik Seluruh Provinsi - Cek COVID-19 Indonesia</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <meta name="description"
+        content="Data Statistik Kasus COVID-19 Untuk Seluruh Provinsi Di Indonesia." />
+    <meta name="keywords" content="Data Statistik Seluruh Provinsi Cek COVID-19 Indonesia" />
+    <meta name="author" content="indrij.vercel.app" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@indrij_" />
+    <meta name="twitter:creator" content="@indrij_" />
+    <meta property="og:title" content="Data Statistik Seluruh Provinsi Cek COVID-19 Indonesia" />
+    <meta property="og:type" content="information covid19 website" />
+    <meta property="og:description"
+        content="Data Statistik Kasus COVID-19 Untuk Seluruh Provinsi Di Indonesia." />
+    <meta property="og:url" content="https://cekcovid19id.vercel.app/provinsi.html" />
+    <link rel="stylesheet" href="dist/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="src/css/style.min.css">
 </head>
 
 <body class="d-flex flex-column h-100">
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm">
-    <div class="container">
-        <a class="navbar-brand" href="/">cekcovid19id
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="bi-list"></i>
-        </button>
-        <div class="collapse navbar-collapse justify-content-md-end" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link navbar-home" href="/">Beranda</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link navbar-home active" href="provinsi.html">Data Statistik Provinsi</a>
-                </li>
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="/">cekcovid19id
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-md-end" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link navbar-home" href="/">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-home active" href="provinsi.html">Data Statistik Provinsi</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
-<main>
-  <div class="container">
-    <h3 class="fw-bold">Data Statistik Kasus COVID-19 Untuk Seluruh Provinsi Di Indonesia</h3>
-    <div id="terakhir-update"></div>
-    <div class="row" id="listnya">
-    </div>
-  </div>
-</main>
+    <main>
+        <div class="container">
+            <h3 class="fw-bold">Data Statistik Kasus COVID-19 Untuk Seluruh Provinsi Di Indonesia</h3>
+            <div id="terakhir-update"></div>
+            <div class="row" id="listnya">
+            </div>
+        </div>
+        <button id="back-to-top">Back to Top <i class="bi-arrow-up"></i></button>
+    </main>
 
 
-<footer class="footer mt-auto py-3 bg-white">
-  <div class="container text-center">
-      <span> &copy; indrijunanda</span><br>
-      <span>Developed use <a href="//getbootstrap.com" >Bootstrap 5</a> and Hosted on <a href="//vercel.com" >Vercel</a></span>
-  </div>
-</footer>
+    <footer class="footer mt-auto py-3 bg-white">
+        <div class="container text-center">
+            <span> &copy; indrijunanda</span><br>
+            <span>Developed use <a href="//getbootstrap.com">Bootstrap 5</a> and Hosted on <a
+                    href="//vercel.com">Vercel</a></span>
+        </div>
+    </footer>
 
-  <script src="dist/bootstrap/js/bootstrap.min.js"></script>
-  <script src="dist/jquery/dist/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.13.4/jquery.mask.min.js"></script>
-  <script src="dist/momentjs/moment-with-locales.min.js"></script>
-  <script src="src/js/index.min.js"></script>
+    <script src="dist/bootstrap/js/bootstrap.min.js"></script>
+    <script src="dist/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.13.4/jquery.mask.min.js"></script>
+    <script src="dist/momentjs/moment-with-locales.min.js"></script>
+    <script src="src/js/index.min.js"></script>
 </body>
 
 </html>
