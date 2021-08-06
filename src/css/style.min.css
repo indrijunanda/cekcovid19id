@@ -1,1 +1,303 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');body{color:#495057!important;font-family:'Poppins',sans-serif;background-color:#f8f9fa}@media (min-width:768px){html{font-size:16px}}h1,h2,h3,h4,h5,h6{color:#212529}p{font-size:16px;line-height:28px}main{margin-top:8rem;margin-bottom:5rem}.pricing-header{max-width:700px}.border-top{border-top:1px solid #e5e5e5}.border-bottom{border-bottom:1px solid #e5e5e5}.box-shadow{box-shadow:0 .25rem .75rem rgba(0,0,0,.05)}.angka-kasus{font-size:2.3rem;font-weight:bold;margin-bottom:.7rem}.title-home{font-weight:800;color:#212529;font-size:55px;line-height:60px}.navbar{padding:1em 0}.navbar-brand{font-weight:700;font-size:20px;line-height:23px}.nav-item{font-weight:700;color:#495057;margin-left:.4em;margin-right:.4em;transition:all .2s ease-in-out}.nav-item:hover{font-weight:700;color:#495057!important;background-color:rgba(2,62,125,.1);border-radius:.3rem}.card-provinsi{height:auto!important;border-radius:.5em;border:none;box-shadow:0 4px 6px -1px rgb(0 0 0 / 10%),0 2px 4px -1px rgb(0 0 0 / 6%)}.card-provinsi p{line-height:12px;font-size:16px}.card{height:155px;border-radius:.5em;border:none;box-shadow:0 4px 6px -1px rgb(0 0 0 / 10%),0 2px 4px -1px rgb(0 0 0 / 6%)}.card-telp{text-decoration:none}ol li{margin-bottom:-.7rem}.card-telp .card{text-decoration:none;color:#023e7d;transition:all .2s ease-in-out}.card-telp:hover .card{background-color:#023e7d;text-decoration:none;color:#ffffff!important}.card-telp .card p{color:#212529!important;margin-top:-.5em}.card-telp:hover .card h4{color:#ffffff!important}.card-telp:hover .card p{color:#ffffff!important}.card-telp:hover .card span{color:#ffffff!important}.navbar-toggler{outline:0;border:none;font-size:28px;color:#023e7d}.card-sosmed:hover a{color:#023e7d!important}.card.provinsi{margin-top:2rem;border-radius:.5em;box-shadow:none!important;background-color:#023e7d;height:auto!important}.card.provinsi h3{color:#ffffff!important;font-weight:600;line-height:40px}.card.provinsi p{color:#ffffff!important}.card.provinsi .btn{padding:10px 40px;font-size:16px;font-weight:500}.navbar-toggler:focus{outline:0!important;box-shadow:none!important;border:none}.text-card{color:#023e7d}.card.terkonfirmasi{background-color:#023e7d;color:#ffffff}.card .card-title h6{font-weight:600;color:#6c757d}.card.kasus-aktif{color:#ffa200!important}.card.sembuh{color:#52b788!important}.card.meninggal{color:#c9184a!important}.card.terkonfirmasi .card-title h6{color:#ffffff!important}.text-primary{color:#023e7d!important}.text-danger{color:#c9184a!important}.text-warning{color:#ffa200!important}.text-success{color:#52b788!important}.bg-image-full{background:no-repeat center center scroll;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;-o-background-size:cover}.bg-image-full .provinsi{color:#fafafa;font-weight:900;font-size:3em}.bg-image-full .other{color:#fafafa;font-weight:900;font-size:5em}.btn-outline-primary{border:1px solid #ffffff;color:#ffffff}.btn-outline-primary:hover{border:1px solid #ffffff;color:#023e7d;background-color:#ffffff}#back-to-top{display:inline-block;background-color:#ffffff;border:1px solid #212529;height:40px;text-align:center;border-radius:4px;position:fixed;bottom:30px;right:30px;transition:background-color .3s,opacity .5s,visibility .5s;opacity:0;visibility:hidden;z-index:1000}#back-to-top::after{font-weight:400;font-size:2em;color:#fff}#back-to-top.show{opacity:1;visibility:visible}footer{color:#212529}footer a{text-decoration:none;color:#023e7d!important;font-weight:700}@media screen and (max-width:990px){footer{font-size:12px}}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+body {
+    color: #495057 !important;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa
+}
+
+@media (min-width:768px) {
+    html {
+        font-size: 16px
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #212529
+}
+
+p {
+    font-size: 16px;
+    line-height: 28px
+}
+
+main {
+    margin-top: 8rem;
+    margin-bottom: 5rem
+}
+
+.pricing-header {
+    max-width: 700px
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05)
+}
+
+.angka-kasus {
+    font-size: 2.3rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+}
+
+.title-home {
+    font-weight: 800;
+    color: #212529;
+    font-size: 55px;
+    line-height: 60px
+}
+
+.navbar {
+    padding: 1em 0
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px
+}
+
+.nav-item {
+    font-weight: 700;
+    color: #495057;
+    margin-left: .4em;
+    margin-right: .4em;
+    transition: all .2s ease-in-out
+}
+
+.nav-item:hover {
+    font-weight: 700;
+    color: #495057 !important;
+    background-color: rgba(2, 62, 125, .1);
+    border-radius: .3rem
+}
+
+.card-provinsi {
+    height: auto !important;
+    border-radius: .5em;
+    border: none;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%)
+}
+
+.card-provinsi p {
+    line-height: 12px;
+    font-size: 16px
+}
+
+.card {
+    height: 155px;
+    border-radius: .5em;
+    border: none;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%)
+}
+
+.card-telp {
+    text-decoration: none
+}
+
+ol li {
+    margin-bottom: -.7rem
+}
+
+.card-telp .card {
+    text-decoration: none;
+    color: #023e7d;
+    transition: all .2s ease-in-out
+}
+
+.card-telp:hover .card {
+    background-color: #023e7d;
+    text-decoration: none;
+    color: #ffffff !important
+}
+
+.card-telp .card p {
+    color: #212529 !important;
+    margin-top: -.5em
+}
+
+.card-telp:hover .card h4 {
+    color: #ffffff !important
+}
+
+.card-telp:hover .card p {
+    color: #ffffff !important
+}
+
+.card-telp:hover .card span {
+    color: #ffffff !important
+}
+
+.navbar-toggler {
+    outline: 0;
+    border: none;
+    font-size: 28px;
+    color: #023e7d
+}
+
+.card-sosmed:hover a {
+    color: #023e7d !important
+}
+
+.card.provinsi {
+    margin-top: 2rem;
+    border-radius: .5em;
+    box-shadow: none !important;
+    background-color: #023e7d;
+    height: auto !important
+}
+
+.card.provinsi h3 {
+    color: #ffffff !important;
+    font-weight: 600;
+    line-height: 40px
+}
+
+.card.provinsi p {
+    color: #ffffff !important
+}
+
+.card.provinsi .btn {
+    padding: 10px 40px;
+    font-size: 16px;
+    font-weight: 500
+}
+
+.navbar-toggler:focus {
+    outline: 0 !important;
+    box-shadow: none !important;
+    border: none
+}
+
+.text-card {
+    color: #023e7d
+}
+
+.card.terkonfirmasi {
+    background-color: #023e7d;
+    color: #ffffff
+}
+
+.card .card-title h6 {
+    font-weight: 600;
+    color: #6c757d
+}
+
+.card.kasus-aktif {
+    color: #ffa200 !important
+}
+
+.card.sembuh {
+    color: #52b788 !important
+}
+
+.card.meninggal {
+    color: #c9184a !important
+}
+
+.card.terkonfirmasi .card-title h6 {
+    color: #ffffff !important
+}
+
+.text-primary {
+    color: #023e7d !important
+}
+
+.text-danger {
+    color: #c9184a !important
+}
+
+.text-warning {
+    color: #ffa200 !important
+}
+
+.text-success {
+    color: #52b788 !important
+}
+
+.bg-image-full {
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover
+}
+
+.bg-image-full .provinsi {
+    color: #fafafa;
+    font-weight: 900;
+    font-size: 3em
+}
+
+.bg-image-full .other {
+    color: #fafafa;
+    font-weight: 900;
+    font-size: 5em
+}
+
+.btn-outline-primary {
+    border: 1px solid #ffffff;
+    color: #ffffff
+}
+
+.btn-outline-primary:hover {
+    border: 1px solid #ffffff;
+    color: #023e7d;
+    background-color: #ffffff
+}
+
+#back-to-top {
+    display: inline-block;
+    background-color: #ffffff;
+    border: 1px solid #212529;
+    height: 40px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000
+}
+
+#back-to-top::after {
+    font-weight: 400;
+    font-size: 2em;
+    color: #fff
+}
+
+#back-to-top.show {
+    opacity: 1;
+    visibility: visible
+}
+
+footer {
+    color: #212529
+}
+
+footer a {
+    text-decoration: none;
+    color: #023e7d !important;
+    font-weight: 700
+}
+
+@media screen and (max-width:990px) {
+    footer {
+        font-size: 12px
+    }
+}

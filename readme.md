@@ -11,7 +11,6 @@ Informasi Data Statistik Kasus COVID-19 Indonesia dan Data Provinsi di Seluruh I
 
 ### API
 
- - COVID-19 Global Data by  [mathdroid](https://github.com/mathdroid/covid-19-api)
  - COVID-19 Indonesia Data by [mathdroid](https://github.com/mathdroid/indonesia-covid-19-api)
  - COVID-19 Indonesia by [Reynadi531](https://github.com/Reynadi531/api-covid19-indonesia-v2)
 
