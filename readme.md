@@ -1,12 +1,12 @@
 # CEK COVID-19 INDONESIA
 
-Informasi Data Statistik Kasus COVID-19 Indonesia dan Data Provinsi di Indonesia
+Informasi Data Statistik Kasus COVID-19 Indonesia dan Data Provinsi di Seluruh Indonesia.
 
 [Klik Disini](https://cekcovid19id.vercel.app/) untuk melihat Website
 
 ### Framework
 
- - [Bootstrap](https://getbootstrap.com/)
+ - [Bootstrap 5](https://getbootstrap.com/)
  - [Jquery](https://jquery.com/)
 
 ### API
@@ -17,5 +17,5 @@ Informasi Data Statistik Kasus COVID-19 Indonesia dan Data Provinsi di Indonesia
 
 ### Image Source
 
- - [Freepick](https://www.freepik.com/)
+ - [storyset](https://storyset.com/)
 
